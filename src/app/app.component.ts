@@ -17,7 +17,10 @@ export class AppComponent {
     this.authService.authState.subscribe((user) => {
       this.user = user;
       this.loggedIn = (user != null);
-      console.log(this.user);
     });
+  }
+
+  signOut(): void {
+    this.authService.signOut();
   }
 }
