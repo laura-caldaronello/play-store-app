@@ -1,5 +1,8 @@
+<div>{{message}}</div>
+
 <asl-google-signin-button *ngIf="!user"></asl-google-signin-button>
 
 <div *ngIf="user">
   <h4>{{ 'ciao ' + user.name }}</h4>
+  <button (click)="signOut()">sign out</button>
 </div>
