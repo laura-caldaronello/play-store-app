@@ -33,7 +33,7 @@ export class AppComponent {
   }
 
   getBackEnd() {
-    this.http.get('http://corsoweb-tomcat-env.eba-pzpjgr3c.eu-north-1.elasticbeanstalk.com/message-servlet', {responseType: 'text'}).subscribe(resp => {
+    this.http.get('https://corsoweb-tomcat-env.eba-pzpjgr3c.eu-north-1.elasticbeanstalk.com/message-servlet', {responseType: 'text'}).subscribe(resp => {
       this.message = resp;
     })
   }
